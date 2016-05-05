@@ -30,9 +30,9 @@ exports.formatPriceChanges = priceChanges => {
             let property = priceChange.get("Parent");
             console.log(property);
             let fields = [];
-            //fields.push({title: "Address", value: `${property.get("Address__c")}, ${property.get("City__c")} ${property.get("State__c")}`, short:true});
+            fields.push({title: "Address", value: `${property.get("Address__c")}, ${property.get("City__c")} ${property.get("State__c")}`, short:true});
             //fields.push({title: "Link", value: "https://login.salesforce.com/" + property.getId(), short:true});
-            fields.push({title: "Old Price", value: `${numeral(priceChange.get("OldValue")).format('$0,0')}`, short:true});
+            //fields.push({title: "Old Price", value: `${numeral(priceChange.get("OldValue")).format('$0,0')}`, short:true});
             fields.push({title: "New Price", value: `${numeral(priceChange.get("NewValue")).format('$0,0')}`, short:true});
             attachments.push({color: color, fields: fields});
         });
