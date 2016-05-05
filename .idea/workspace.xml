@@ -31,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="house.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="house.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/house.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66853935">
-              <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+            <state vertical-scroll-proportion="-17.62963">
+              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -51,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="salesforce.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="salesforce.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/salesforce.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="-1.6235955">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -286,18 +286,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/salesforce.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693">
           <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/house.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.62963">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -310,10 +310,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/house.js">
+    <entry file="file://$PROJECT_DIR$/modules/salesforce.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66853935">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+        <state vertical-scroll-proportion="-1.6235955">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
