@@ -26,7 +26,7 @@ exports.handle = (req, res) => {
         salesforce.findPriceChanges()
             .then(priceChanges => res.send({
                 text: "Here are the recent price changes:",
-                attachments: formatter.formatProperties(priceChanges)
+                attachments: formatter.formatPriceChanges(priceChanges)
             }))
             .catch(error => res.send("Error while retrieving price changes " + JSON.stringify(error)));
     } else {
