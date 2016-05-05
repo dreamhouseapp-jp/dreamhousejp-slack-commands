@@ -24,7 +24,7 @@ exports.formatProperties = properties => {
 };
 
 exports.formatPriceChanges = priceChanges => {
-
+    console.log(priceChanges);
     if (priceChanges && priceChanges.length>0) {
         let attachments = [];
         priceChanges.forEach(priceChange => {
