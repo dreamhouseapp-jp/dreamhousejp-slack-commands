@@ -65,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/modules/formatter.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6868421">
-              <caret line="35" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+              <caret line="35" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -313,7 +313,7 @@
     <entry file="file://$PROJECT_DIR$/modules/formatter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6868421">
-          <caret line="35" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <caret line="35" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding />
         </state>
       </provider>
