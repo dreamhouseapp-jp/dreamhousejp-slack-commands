@@ -1,4 +1,8 @@
+"use strict";
+
 let salesforce = require('./salesforce'),
+
+    formatter = require('./formatter'),
 
     HOUSE_TOKEN = process.env.HOUSE_TOKEN;
 
