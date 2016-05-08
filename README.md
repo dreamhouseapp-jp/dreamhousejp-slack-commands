@@ -47,7 +47,7 @@ If you haven't already done so, follow the steps below to create a Salesforce co
 
 1. In the **Choose a Command** input field, type **/house** and click **Add Slash Command Integration**
 
-1. In Integration Settings, 
+1. In the **Integration Settings** section: 
 
     - Command: /house
     - URL: the URL of the app you deployed on Heroku followed by /house. For example: ```https://my-heroku-app.herokuapp.com/house```
