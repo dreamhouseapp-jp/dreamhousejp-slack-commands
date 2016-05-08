@@ -4,7 +4,7 @@ let salesforce = require('./salesforce'),
 
     formatter = require('./formatter'),
 
-    HOUSE_TOKEN = process.env.HOUSE_TOKEN;
+    HOUSE_TOKEN = process.env.SLACK_HOUSE_TOKEN;
 
 exports.handle = (req, res) => {
 
