@@ -2,6 +2,10 @@
 
 Slack Slash commands implementation for the DreamHouse sample application.
 
+Watch [this video](https://youtu.be/xB-1SsUoBHk) to see the application in action.
+ 
+Read [this blog post](http://coenraets.org/blog/2016/01/slack-salesforce-integration-part-2/) for more details. 
+
 Follow the instructions below to create your own instance of the bot:
 
 ### Step 1: Install the DreamHouse App
