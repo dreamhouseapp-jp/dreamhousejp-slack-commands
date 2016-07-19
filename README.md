@@ -1,59 +1,58 @@
-# DreamHouse Slash Commands for Slack
+# Slack 用のスラッシュコマンド
 
-Slack Slash commands implementation for the DreamHouse sample application.
+DreamHouse サンプルアプリケーション用の Slack スラッシュコマンドの実装です。
 
-Follow the instructions below to create your own instance of the bot:
+ボットのインスタンスを実際に作成するには、以下の手順を実行します。
 
-### Step 1: Install the DreamHouse App
+### ステップ 1：DreamHouse アプリをインストールする
 
-If you haven't already done so, follow [these instructions](http://dreamhouse-site.herokuapp.com/installation/) to install the DreamHouse sample application.
+DreamHouse サンプルアプリケーションをまだインストールしていない場合は、[この手順](http://dreamhouseappjp.io/installation/)を実行してインストールします。
 
-### Step 2: Create a Connected App
+### ステップ 2：接続アプリケーションを作成する
 
-If you haven't already done so, follow the steps below to create a Salesforce connected app:
+Salesforce 接続アプリケーションをまだ作成していない場合は、以下の手順を実行して作成します。
 
-1. In Salesforce Setup, type **Apps** in the quick find box, and click the **Apps** link
+1. Salesforce の［設定］で、クイック検索ボックスに「**アプリ**」と入力して［**アプリケーション**］リンクをクリックします。
 
-1. In the **Connected Apps** section, click **New**, and define the Connected App as follows:
+1. ［**接続アプリケーション**］セクションで、［**新規**］をクリックし、次のように接続アプリケーションを定義します。
 
-    - Connected App Name: MyConnectedApp (or any name you want)
-    - API Name: MyConnectedApp
-    - Contact Email: enter your email address
-    - Enabled OAuth Settings: Checked
-    - Callback URL: http://localhost:8200/oauthcallback.html (You'll change this later)
-    - Selected OAuth Scopes: Full Access (full)
-    - Click **Save**
+    - 接続アプリケーション名：MyConnectedApp（または任意の名前）
+    - API 参照名：MyConnectedApp
+    - 取引先責任者メール：自分のメールアドレスを入力します。
+    - OAuth 設定の有効化：チェックボックスをオンにします。
+    - コールバック URL：http://localhost:8200/oauthcallback.html（これは後で変更します）
+    - 選択した OAuth 範囲：フルアクセス（full）
+    - ［**保存**］をクリックします。
 
-### Step 3: Deploy the Slash Commands
+### ステップ 3：スラッシュコマンドをデプロイする
 
-1. Make sure you are logged in to the [Heroku Dashboard](https://dashboard.heroku.com/)
-1. Click the button below to deploy the Slash Commands on Heroku:
+1. [Heroku ダッシュボード](https://dashboard.heroku.com/)にログインしていることを確認します。
+1. 下のボタンをクリックして、スラッシュコマンドを Heroku にデプロイします。
 
     [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-1. Fill in the config variables as described.
+1. 以下の通りに環境変数を設定します。
 
-    - For **SF_CLIENT_ID**, enter the Consumer Key of your Salesforce Connected App
-    - For **SF_CLIENT_SECRET**, enter the Consumer Secret of your Salesforce Connected App
-    - For **SF_USER_NAME**, enter the the username of your Salesforce integration user
-    - For **SF_PASSWORD**, enter the the username of your Salesforce integration user
-    - Leave **SLACK_HOUSE_TOKEN** blank for now.
+    - **SF_CLIENT_ID**：Salesforce 接続アプリケーションのコンシューマキーを入力します。
+    - **SF_CLIENT_SECRET**：Salesforce 接続アプリケーションのコンシューマの秘密を入力します。
+    - **SF_USER_NAME**：Salesforce 統合ユーザーのユーザー名を入力します。
+    - **SF_PASSWORD**：Salesforce 統合ユーザーのパスワードを入力します。
+    - **SLACK_HOUSE_TOKEN** は、ここでは空白のままにします。
 
-### Step 4: Create the Slash Command in Slack
+### ステップ 4：Slack でスラッシュコマンドを作成する
 
-1. In a browser, go to the custom integration page for your Slack team. For example ```https://YOUR_TEAM_NAME.slack.com/apps/manage/custom-integration```. Replace ```YOUR_TEAM_NAME``` with your actual team name.
+1. ブラウザで、Slack チームの Custom Integration ページを開きます。例：```https://<チーム名>.slack.com/apps/manage/custom-integration```（```<チーム名>```は実際のチーム名で置き換えます。）
 
-1. Click **Slash Commands**, and click **Add Configuration**
+1. ［**Slash Commands**］をクリックし、［**Add Configuration**］をクリックします。
 
-1. In the **Choose a Command** input field, type **/house** and click **Add Slash Command Integration**
+1. ［**Choose a Command**］入力フィールドに「**/house**」と入力し、［**Add Slash Command Integration**］をクリックします。
 
-1. In the **Integration Settings** section: 
+1. ［**Integration Settings**］セクションで以下のように設定します。
 
-    - Command: /house
-    - URL: the URL of the app you deployed on Heroku followed by /house. For example: ```https://my-heroku-app.herokuapp.com/house```
-    - Method: POST
-    - Copy the token, open another browser tab, login to the Heroku Dashboard, and set the Heroku **SLACK_HOUSE_TOKEN** config variable to the value of that token (**Setting>Reveal Config Vars**)
-    - Customize Name: DreamHouse
-    
-    Click **Save Integration**.
+    - Command：/house
+    - URL：Heroku にデプロイしたアプリの URL の末尾に /house を付加します。例：```https://my-heroku-app.herokuapp.com/house```
+    - Method：POST
+    - トークンをコピーし、ブラウザのタブをもう 1 つ開いて、Heroku ダッシュボードにログインし、Heroku の **SLACK_HOUSE_TOKEN** 環境変数にそのトークンの値を設定します（［**Setting**］>［**Reveal Config Vars**］）
+    - Customize Name：DreamHouse
 
+    ［**Save Integration**］をクリックします。
